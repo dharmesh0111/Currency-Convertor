@@ -1,0 +1,45 @@
+body {
+    background: url("img2.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #d2a82a;
+    padding: 20px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+select, input, button, h3 {
+    display: block;
+    width: 300px;
+    margin:10px auto;
+    color: #333;
+}
+
+select, input {
+    padding: 10px;
+    border: 1px solid #242323;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

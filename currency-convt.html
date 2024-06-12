@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="currency.cont.js"></script>
+    <link rel="stylesheet" href="currency-conv.css">
+</head>
+<body>
+    <div class="container">
+    From:
+    <select name="from" id="from">
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+        <option value="AED">AED</option>
+        <option value="AUD">AUD</option>
+        <option value="BRL">BRL</option>
+    </select><br>
+    To:
+    <select name="to" id="to">
+        <option value="INR">Indian Rupees</option>
+        <option value="EUR">EURO</option>
+        <option value="USD">USD</option>
+    </select><br>
+    Amount: 
+    <input type="text" id="amount">
+    <button onclick="convert()">Convert</button>
+    <h3 id="result"></h3>
+    </div>
+</body>
+</html>
