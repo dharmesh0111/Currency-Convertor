@@ -3,30 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency Converter</title>
     <script src="currency.cont.js"></script>
     <link rel="stylesheet" href="currency-conv.css">
 </head>
 <body>
     <div class="container">
-    From:
-    <select name="from" id="from">
-        <option value="USD">USD</option>
-        <option value="GBP">GBP</option>
-        <option value="AED">AED</option>
-        <option value="AUD">AUD</option>
-        <option value="BRL">BRL</option>
-    </select><br>
-    To:
-    <select name="to" id="to">
-        <option value="INR">Indian Rupees</option>
-        <option value="EUR">EURO</option>
-        <option value="USD">USD</option>
-    </select><br>
-    Amount: 
-    <input type="text" id="amount">
-    <button onclick="convert()">Convert</button>
-    <h3 id="result"></h3>
+        <h1>Currency Converter</h1>
+        <label for="from">From:</label>
+        <select name="from" id="from">
+            <option value="USD">US Dollar (USD)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="AED">Emirati Dirham (AED)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="BRL">Brazilian Real (BRL)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+            <option value="CHF">Swiss Franc (CHF)</option>
+            <option value="CNY">Chinese Yuan (CNY)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="INR">Indian Rupee (INR)</option>
+        </select>
+
+        <label for="to">To:</label>
+        <select name="to" id="to">
+            <option value="INR">Indian Rupee (INR)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="USD">US Dollar (USD)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="CNY">Chinese Yuan (CNY)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+            <option value="AED">Emirati Dirham (AED)</option>
+        </select>
+
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" placeholder="Enter amount">
+
+        <button onclick="convert()">Convert</button>
+
+        <h3 id="result"></h3>
     </div>
 </body>
 </html>
